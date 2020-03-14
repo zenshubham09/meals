@@ -16,8 +16,7 @@ class CategoryMealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 //    final routesArgs = ModalRoute.of(context).settings.arguments as Map<String, String>;
 
-    final routesArgs =
-        ModalRoute.of(context).settings.arguments as CategoryItem;
+    final routesArgs = ModalRoute.of(context).settings.arguments as CategoryItem;
     final title = routesArgs.title;
     final categoryId = routesArgs.id;
 

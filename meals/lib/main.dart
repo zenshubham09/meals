@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meals/Screen/CategoryMealsScreen.dart';
 import 'package:meals/Screen/meal_detail_screen.dart';
+import 'package:meals/Screen/tabs_screen.dart';
 import 'package:meals/Utilities/Route/RouteConstants.dart';
-import 'package:meals/Screen/caragories_screen.dart';
+import 'package:meals/Screen/catagories_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       routes: {
         /// to set default or initial route , no need to define identifier
 
-        '/': (context) => CategoriesScreen(), // Default Route
+        '/': (context) => TabsScreen(), // Default Route
         RouteConstants.categoryMeals: (context) => CategoryMealsScreen(),
         RouteConstants.mealDetail: (context) => MealDetailScreen(),
       },
